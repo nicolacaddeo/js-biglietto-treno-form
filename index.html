@@ -15,33 +15,37 @@
 <body>
     <div class="container text-center">
         <h1 class="text-uppercase text-white py-5">Calcola il prezzo del tuo biglietto</h1>
-        <div class="container nc-bg-white rounded-3">
-            <div id="data-request" class="row py-5">
-                <div class="col-4 pb-3 fw-semibold nc-text-pink">Nome e Cognome</div>
-                <div class="col-4 pb-3 fw-semibold nc-text-pink">Km da percorrere</div>
-                <div class="col-4 pb-3 fw-semibold nc-text-pink">Fascia d'età</div>
-                <div class="col-4">
-                    <input type="text" placeholder="Nome e Cognome">
+        <main>
+            <section>
+                <!-- Data request section -->
+                <div class="container nc-bg-white rounded-3">
+                    <div id="data-request" class="row py-5">
+                        <div class="col-4 pb-3 fw-semibold nc-text-pink">Nome e Cognome</div>
+                        <div class="col-4 pb-3 fw-semibold nc-text-pink">Km da percorrere</div>
+                        <div class="col-4 pb-3 fw-semibold nc-text-pink">Fascia d'età</div>
+                        <div class="col-4">
+                            <input type="text" placeholder="Nome e Cognome">
+                        </div>
+                        <div class="col-4">
+                            <input type="text" id="Km" placeholder="Kilometri del viaggio">
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="age" placeholder="La tua età">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 pb-4">
+                            <button type="button" id="formButton" class="btn btn-secondary">Genera</button>
+                            <button type="button" class="btn btn-secondary">Annulla</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <input type="text" id="Km" placeholder="Kilometri del viaggio">
-                </div>
-                <div class="col-4">
-                    <select name="cars" id="age" class="nc-select-padding">
-                        <option value="">-</option>
-                        <option value=" volvo">Maggiorenne</option>
-                        <option value="saab">Minorenne</option>
-                        <option value="opel">Over 65</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 pb-4">
-                    <button type="button" class="btn btn-secondary">Genera</button>
-                    <button type="button" class="btn btn-secondary">Annulla</button>
-                </div>
-            </div>
-        </div>
+            </section>
+            <section>
+                <h1 class="text-uppercase text-white py-5">Il tuo biglietto</h1>
+            </section>
+        </main>
+
     </div>
 
 </body>

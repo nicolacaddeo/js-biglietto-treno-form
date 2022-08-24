@@ -19,7 +19,7 @@ formButton.addEventListener('click',
             let discount = 0;
             if (userAge < 18) {
                 discount = (totalPrice / 100 * 20);
-            } else if (age > 65) {
+            } else if (userAge > 65) {
                 discount = (totalPrice / 100 * 40);
             }
             totalPrice = totalPrice - discount;
