@@ -1,3 +1,21 @@
 body {
     background-color: #b91450;
 }
+
+.nc-bg-white {
+    background-color: #fff;
+}
+
+.nc-text-pink {
+    color: #b91450;
+}
+
+#data-request input {
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #b91450;
+}
+
+.nc-select-padding {
+    padding: 1px 2px;
+}
