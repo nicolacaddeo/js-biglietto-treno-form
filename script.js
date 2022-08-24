@@ -23,9 +23,11 @@ formButton.addEventListener('click',
                 discount = (totalPrice / 100 * 40);
             }
             totalPrice = totalPrice - discount;
-            console.log(`Il tuo biglietto costa ${totalPrice.toFixed(2)} euro`);
+            pInput.style.color = '#198754';
+            pInput.innerHTML = `${totalPrice.toFixed(2)} euro`;
         } else {
-            console.log('Puoi inserire solo numeri');
+            pInput.style.color = '#dc3545';
+            pInput.innerHTML = 'Assicurati di aver inserito i dati correttamente';
         }
     }
 );
